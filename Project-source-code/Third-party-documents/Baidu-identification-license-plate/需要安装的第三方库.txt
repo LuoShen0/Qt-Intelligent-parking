@@ -1,0 +1,11 @@
+1.安装依赖库libcurl（需要支持https） openssl jsoncpp(>1.6.2版本，0.x版本将不被支持)
+CURL:    sudo apt-get install   libcurl4-openssl-dev
+
+jsoncpp： sudo apt-get install   libjsoncpp-dev
+
+openssl： sudo apt-get install   libssl-dev
+
+2.配置JSON 库头文件在环境变量中：
+家目录下 打开gedit .bashrc
+在最后添加：export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:/usr/include/jsoncpp
+
